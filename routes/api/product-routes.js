@@ -79,7 +79,7 @@ router.put('/:id', (req, res) => {
       id: req.params.id,
     },
   })
-    .then((product) => {
+    .then((data) => {
       if (req.body.tagIds && req.body.tagIds.length) {
 
         ProductTag.findAll({
@@ -108,7 +108,7 @@ router.put('/:id', (req, res) => {
         });
       }
 
-      return res.json(product);
+      return res.json(data);
     })
     .catch((err) => {
       // console.log(err);

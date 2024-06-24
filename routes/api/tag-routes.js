@@ -58,7 +58,7 @@ router.delete('/:id', (req, res) => {
     }
   })
   .then((data)=> res.status(200).json(data))
-  .catch((err)=>res.status(404).json(err));
+  .catch((err)=> res.status(404).json(err));
   // delete on tag by its `id` value
 });
 

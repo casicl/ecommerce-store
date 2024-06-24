@@ -10,9 +10,7 @@ const categoryData = [
   {
     category_name: 'Music',
   },
-  {
-    category_name: 'Hats',
-  },
+  
   {
     category_name: 'Shoes',
   },
